@@ -1,0 +1,40 @@
+.header-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.header-item {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.about-item {
+    text-align: center;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto; 
+}
+
+.skills-item {
+    text-align: center;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
