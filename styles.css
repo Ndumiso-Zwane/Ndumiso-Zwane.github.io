@@ -1,6 +1,23 @@
+body{
+    margin: 0;
+}
+
 .header-container {
     display: grid;
     grid-template-columns: 20% 80%;
+    background-color: #002352;
+}
+
+.header-container a {
+    float: right;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+h1{
+    color: #ffffff;
+    margin-left: 20px;
 }
 
 .header-item {
@@ -14,6 +31,7 @@
 .about-container {
     display: grid;
     grid-template-columns: 40% 60%;
+    height: 85vh;
 }
 
 .about-item {
@@ -23,6 +41,7 @@
 .skills-container {
     display: grid;
     grid-template-columns: auto auto auto auto auto; 
+    height: 85vh;
 }
 
 .skills-item {
@@ -32,9 +51,11 @@
 .projects-container {
     display: grid;
     grid-template-columns: auto auto auto;
+    height: 85vh;
 }
 
 .contact-container {
     display: grid;
     grid-template-columns: 50% 50%;
+    height: 85vh;
 }
