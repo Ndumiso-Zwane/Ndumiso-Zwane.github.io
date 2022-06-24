@@ -3,9 +3,11 @@ body{
 }
 
 .header-container {
+    position: fixed;
+    width: 100%;
     display: grid;
     grid-template-columns: 20% 80%;
-    background-color: #002352;
+    background-color: #0B0B45;
 }
 
 .header-container a {
@@ -34,28 +36,83 @@ h1{
     height: 85vh;
 }
 
-.about-item {
-    text-align: center;
+.center {
+    margin-top: 25%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.about-item img {
+    height: 80vh;
+    width: 40vw;
 }
 
 .skills-container {
     display: grid;
-    grid-template-columns: auto auto auto auto auto; 
+    grid-template-columns: 20% 20% 20% 20% 20%; 
     height: 85vh;
+    width: auto;
+    margin: auto;
 }
 
 .skills-item {
-    text-align: center;
+    height: auto;
+    width: auto;
+    margin: auto;
+}
+
+.skills-item img{
+    width: 15vw;
+    height: 20vh;
 }
 
 .projects-container {
     display: grid;
-    grid-template-columns: auto auto auto;
-    height: 85vh;
+    grid-template-columns: 33% 33% 33%;
+    height: 50vh;
+    margin: auto;
 }
 
+.projects-item{
+    height: 40vh;
+    margin-left: 15%;
+    overflow: hidden;
+}
+
+.projects-item h3{
+    text-align: center; 
+}
+
+/* Auto scroll  */
+
+ .scroll:hover >img
+ {  
+ -moz-animation: border-bounce 3000ms linear;
+ -webkit-animation: border-bounce 3000ms linear;
+ }
+ @-moz-keyframes border-bounce {
+ 0%   { margin-top: -10px;  }
+ 25%  { margin-top: -50px; }
+ 50%  { margin-top: -100px;  }
+ 75%  { margin-top: -50px;  }
+ 100% { margin-top: -0px;  }
+ }
+ @-webkit-keyframes border-bounce {
+ 0%   { margin-top: -10px;  }
+ 25%  { margin-top: -50px; }
+ 50%  { margin-top: -100px;  }
+ 75%  { margin-top: -50px;  }
+ 100% { margin-top: -0px;  }
+ }
+
 .contact-container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    height: 85vh;
+    text-align: center;
+    height: 80vh;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+footer {
+    text-align: right;
+    margin-right: 10vw;
 }
