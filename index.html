@@ -3,86 +3,87 @@
     <head>
         <title>Ndumiso Zwane</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
         <header>
             <div class="header-container">
-                <div>
-                    <h1>Ndumiso Zwane</h1>
-                </div>
-                <div class="header-item">  
-                    <nav>
+                <div id="myTopNav" class="topnav">  
                         <a href="#about">About</a>
-                    </nav>    
-                    <nav>
                         <a href="#skills">Skills</a>
-                    </nav>
-                    <nav>
                         <a href="#projects">Projects</a>
-                    </nav>    
-                    <nav>
                         <a href="#contact">Contact</a>
-                    </nav>               
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>               
                 </div>
             </div>
         </header>
         
         <section id="about">
-            <div class="about-container">
+            <div class="about-container container">
                 <div class="about-item">
                     <img src="images/mern.png" alt="my avatar">
                 </div>
                 <div class="about-item center">
-                    <h2>About Me</h2>
+                    <h2>Ndumiso Zwane</h2>
                     <p>I obtained my degree in Bcom Informatics from the University of Pretoria and I have a few years of freelance experience as a full-stack Web Developer. I've worked with a variety of technologies and languages from C# to Python and most things in between, but my current preference is the MERN stack.</p>
                 </div>                
             </div>
         </section>
 
-        <section id="skills">
+        <section id="skills" class="main">
             <h2 style="text-align: center;">My Skills</h2>            
-            <div class="skills-container">
+            <div class="skills-container container">
                 <div class="skills-item">
-                    <img src="images/skills/js.png" alt="JavaScript">
+                    <img src="images/skills/javascript.png" alt="JavaScript">
+                    <h3>JavaScript</h3>
                 </div>
                 <div class="skills-item">
                     <img src="images/skills/php.png" alt="PHP">
+                    <h3>PHP</h3>
                 </div>
                 <div class="skills-item">
                     <img src="images/skills/html.png" alt="HTML">
+                    <h3>HTML</h3>
                 </div>
                 <div class="skills-item">
-                    <img src="images/skills/css.png" style="width: 15vh;" alt="CSS">
+                    <img src="images/skills/css.png" alt="CSS">
+                    <h3>CSS</h3>
                 </div>
                 <div class="skills-item">
                     <img src="images/skills/bs.png" alt="Bootstrap">
+                    <h3>Bootstrap</h3>
                 </div> 
                 
                 <div class="skills-item">
-                    <img src="images/skills/sql.jpg" style="width: 20vh;" alt="SQL">
+                    <img src="images/skills/sql.png" alt="SQL">
+                    <h3>SQL</h3>
                 </div> 
                 <div class="skills-item">
                     <img src="images/skills/github.png" alt="GitHub">
+                    <h3>GitHub</h3>
                 </div> 
                 <div class="skills-item">
-                    <img src="images/skills/mongo.png" style="height: 10vh;" alt="MongoDB">
+                    <img src="images/skills/mongo.png" alt="MongoDB">
+                    <h3>MongoDB</h3>
                 </div> 
                 <div class="skills-item">
-                    <img src="images/skills/node.png" style="height: 10vh;" alt="Node.js">
+                    <img src="images/skills/node.png" alt="Node.js">
+                    <h3>NodeJS</h3>
                 </div> 
                 <div class="skills-item">
-                    <img src="images/skills/react.png" style="height: 10vh;" alt="React.js">
+                    <img src="images/skills/react.png" alt="React.js">
+                    <h3>ReactJS</h3>
                 </div>
             </div>
 
         </section>
 
-        <section id="projects">
+        <section id="projects" class="main">
             <h2 style="text-align: center;">Previous Projects</h2>
-            <div class="projects-container">
+            <div class="projects-container container">
                 <div class="projects-item">
                     <h3>The Sound Hub</h3>
                     <span class="scroll">
@@ -104,17 +105,34 @@
             </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="main">
             <h2 style="text-align: center;">Contact</h2>
-            <div class="contact-container">
+            <div class="contact-container container">
                 <div>
                     <p>Feel free to contact me if you would like to chat about a project or would like to offer me any interesing opportunites.</p>
                     <h3>Phone: <span>066 043 1182</span></h3>
-                    <h3>Email: <span>zwanenmm@gmail.com</span></h3>                
+                    <h3>Email: <span>zwanenmm@gmail.com</span></h3>  
+                    <a href="https://linkedin.com/in/ndumiso-zwane-757720124" target="_blank">
+                        <img width="50px" height="auto" src="images/linkdin.png" alt="Linkdin"/>
+                    </a>
+                    <a href="https://github.com/Ndumiso-Zwane" target="_blank">
+                        <img width="50px" height="auto" src="images/skills/github.png" alt="GitHub"/>
+                    </a>                            
                 </div>
             </div>
         </section>
     </body>
-    <footer> Developed by Ndumiso Zwane</footer>
+    <footer class="container"> Developed by Ndumiso Zwane</footer>
+    
+    <script>
+        function myFunction(){
+            var x = document.getElementById("myTopNav");
+            if (x.className === "topnav"){
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </html>
 
