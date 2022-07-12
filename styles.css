@@ -9,6 +9,8 @@ body{
 }
 
 .topnav {
+    position: fixed;
+    width: 100%;
     overflow: hidden;
     background-color: #0B0B45;
 }
@@ -21,6 +23,10 @@ body{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 20px;
+}
+
+.topnav a:active {
+    background-color: rgb(24, 23, 23);
 }
 
 .topnav .icon {
@@ -143,8 +149,8 @@ footer {
         display: block;
     }
 
-    .topnav.reponsive {
-        position: relative;
+    .mobilenav {
+        background-color: black;
     }
     
     .topnav.responsive .icon{
