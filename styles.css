@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    background-color: #d8d9e9;
 }
 
 .main{
@@ -12,7 +13,7 @@ body{
     position: fixed;
     width: 100%;
     overflow: hidden;
-    background-color: #0B0B45;
+    background-color: #050A30;
 }
 
 .topnav a {
@@ -25,8 +26,11 @@ body{
     font-size: 20px;
 }
 
-.topnav a:active {
-    background-color: rgb(24, 23, 23);
+.topnav a:hover {
+    background-color: rgb(157, 162, 177);
+}
+.topnav a.active {
+    background-color: #006D5B;
 }
 
 .topnav .icon {
@@ -131,7 +135,7 @@ h3{
 footer {
     text-align: center;
     color: #ffffff;
-    background-color: #0B0B45;
+    background-color: #050A30;
     padding: 10px;
 }
 
