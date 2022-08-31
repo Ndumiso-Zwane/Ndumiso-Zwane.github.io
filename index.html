@@ -14,15 +14,17 @@
 
     <body>
         <header>
-            <div class="header-container">
-                <div id="myTopNav" class="topnav">  
+            <nav>
+                <div class="header-container">
+                    <div id="myTopNav" class="topnav">  
                         <a href="#about">About</a>
                         <a href="#skills">Skills</a>
                         <a href="#projects">Projects</a>
                         <a href="#contact">Contact</a>
                         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>               
-                </div>
-            </div>
+                    </div>
+                </div>                
+            </nav>
         </header>
         
         <section id="about">
@@ -40,47 +42,47 @@
         <section id="skills" class="main">
             <h2 style="text-align: center;">My Skills</h2>            
             <div class="skills-container container">
-                <div class="skills-item">
+                <figure class="skills-item">
                     <img src="images/skills/javascript.png" alt="JavaScript">
-                    <h3>JavaScript</h3>
-                </div>
-                <div class="skills-item">
+                    <figcaption>JavaScript</figcaption>
+                </figure>
+                <figure class="skills-item">
                     <img src="images/skills/php.png" alt="PHP">
-                    <h3>PHP</h3>
-                </div>
-                <div class="skills-item">
+                    <figcaption>PHP</figcaption>
+                </figure>
+                <figure class="skills-item">
                     <img src="images/skills/html.png" alt="HTML">
-                    <h3>HTML</h3>
-                </div>
-                <div class="skills-item">
+                    <figcaption>HTML</figcaption>
+                </figure>
+                <figure class="skills-item">
                     <img src="images/skills/css.png" alt="CSS">
-                    <h3>CSS</h3>
-                </div>
-                <div class="skills-item">
+                    <figcaption>CSS</figcaption>
+                </figure>
+                <figure class="skills-item">
                     <img src="images/skills/bs.png" alt="Bootstrap">
-                    <h3>Bootstrap</h3>
-                </div> 
+                    <figcaption>Bootstrap</figcaption>
+                </figure> 
                 
-                <div class="skills-item">
+                <figure class="skills-item">
                     <img src="images/skills/sql.png" alt="SQL">
-                    <h3>SQL</h3>
-                </div> 
-                <div class="skills-item">
+                    <figcaption>SQL</figcaption>
+                </figure> 
+                <figure class="skills-item">
                     <img src="images/skills/github.png" alt="GitHub">
-                    <h3>GitHub</h3>
-                </div> 
-                <div class="skills-item">
+                    <figcaption>GitHub</figcaption>
+                </figure> 
+                <figure class="skills-item">
                     <img src="images/skills/mongo.png" alt="MongoDB">
-                    <h3>MongoDB</h3>
-                </div> 
-                <div class="skills-item">
+                    <figcaption>MongoDB</figcaption>
+                </figure> 
+                <figure class="skills-item">
                     <img src="images/skills/node.png" alt="Node.js">
-                    <h3>NodeJS</h3>
-                </div> 
-                <div class="skills-item">
+                    <figcaption>NodeJS</figcaption>
+                </figure> 
+                <figure class="skills-item">
                     <img src="images/skills/react.png" alt="React.js">
-                    <h3>ReactJS</h3>
-                </div>
+                    <figcaption>ReactJS</figcaption>
+                </figure>
             </div>
 
         </section>
@@ -88,24 +90,24 @@
         <section id="projects" class="main">
             <h2 style="text-align: center;">Previous Projects</h2>
             <div class="projects-container container">
-                <div class="projects-item">
-                    <h3>The Sound Hub</h3>
+                <figure class="projects-item">
+                    <figcaption>The Sound Hub</figcaption>
                     <span class="scroll">
-                        <img width="300px" height="auto" src="images/projects/tsh.png" alt="The Sound Hub" style="top: 0px" />
+                        <img width="300" height="auto" src="images/projects/tsh.png" alt="The Sound Hub" style="top: 0px" />
                     </span>               
-                </div>
-                <div class="projects-item">
-                    <h3>Hlami Energy</h3>
+                </figure>
+                <figure class="projects-item">
+                    <figcaption>Hlami Energy</figcaption>
                     <span class="scroll">
-                        <img width="300px" height="auto"  src="images/projects/hlami.png" alt="Hlami Energy">                    
+                        <img width="300" height="auto"  src="images/projects/hlami.png" alt="Hlami Energy">                    
                     </span>
-                </div>
-                <div class="projects-item">
-                    <h3>Quality Tutors</h3>
+                </figure>
+                <figure class="projects-item">
+                    <figcaption>Quality Tutors</figcaption>
                     <span class="scroll">
-                        <img width="300px" height="auto"  src="images/projects/qt.png" alt="Quality Tutors">                     
+                        <img width="300" height="auto"  src="images/projects/qt.png" alt="Quality Tutors">                     
                     </span>
-                </div>
+                </figure>
             </div>
         </section>
 
@@ -115,18 +117,26 @@
                 <div>
                     <p>Feel free to contact me if you would like to chat about a project or would like to offer me any interesing opportunites.</p>
                     <h3>Phone: <span>066 043 1182</span></h3>
-                    <h3>Email: <span>zwanenmm@gmail.com</span></h3>  
-                    <a href="https://linkedin.com/in/ndumiso-zwane-757720124" target="_blank">
-                        <img width="50px" height="auto" src="images/linkdin.png" alt="Linkdin"/>
-                    </a>
-                    <a href="https://github.com/Ndumiso-Zwane" target="_blank">
-                        <img width="50px" height="auto" src="images/skills/github.png" alt="GitHub"/>
-                    </a>                            
+                    <h3>Email: <span>zwanenmm@gmail.com</span></h3>
+                    <div class="social-media">
+                        <figure>
+                            <a href="https://linkedin.com/in/ndumiso-zwane-757720124" target="_blank">
+                                <img width="50" height="auto" src="images/linkdin.png" alt="Linkdin"/>
+                            </a>                        
+                        </figure>  
+                        <figure>
+                            <a href="https://github.com/Ndumiso-Zwane" target="_blank">
+                                <img width="50" height="auto" src="images/skills/github.png" alt="GitHub"/>
+                            </a>                        
+                        </figure>                        
+                    </div>  
                 </div>
             </div>
         </section>
+
+        <footer class="container"> Developed by Ndumiso Zwane</footer>
     </body>
-    <footer class="container"> Developed by Ndumiso Zwane</footer>
+    
     
     <script>
         function myFunction(){
