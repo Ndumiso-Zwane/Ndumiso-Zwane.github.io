@@ -70,7 +70,7 @@ figcaption{
     width: 100%;
 }
 
-button {
+.button {
     background-color: #050A30; 
     border: none;
     color: white;
